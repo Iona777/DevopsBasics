@@ -29,5 +29,4 @@ steps:
     containerRegistry: 'dockerConnectionCiv1'
     repository: 'gregm77/azuredevopsciv1'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
-    buildContext: '**/AzureDockerfile'
+    Dockerfile: '**/AzureDockerfile'
