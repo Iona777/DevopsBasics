@@ -30,4 +30,4 @@ steps:
     repository: 'gregm77/azuredevopsciv1'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    buildContext: '**/AzureDockerFile'
+    buildContext: '**/AzureDockerfile'
