@@ -22,11 +22,12 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
-    containerRegistry: 'dock2'
+    containerRegistry: 'dockerConnectionCiv1'
     command: 'login'
 - task: Docker@2
   inputs:
-    containerRegistry: 'dock2'
-    repository: 'gregm77 / azuredevops1'
+    containerRegistry: 'dockerConnectionCiv1'
+    repository: 'gregm77/azuredevopsciv1'
     command: 'buildAndPush'
-    Dockerfile: '**/AzureDockerfile'
+    Dockerfile: '**/Dockerfile'
+    buildContext: '**/AzureDockerFile'
