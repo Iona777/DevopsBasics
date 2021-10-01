@@ -30,3 +30,8 @@ steps:
     repository: 'gregm77/azuredevopsciv1'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'buildfile'
+    publishLocation: 'Container'
